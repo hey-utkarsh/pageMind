@@ -11,7 +11,7 @@ export async function validateApiKey(apiKey: string): Promise<boolean> {
         "anthropic-dangerous-direct-browser-access": "true",
       },
       body: JSON.stringify({
-        model: "claude-haiku-4-5-20241022",
+        model: "claude-haiku-4-5-20251001",
         max_tokens: 1,
         messages: [{ role: "user", content: "hi" }],
       }),
@@ -45,7 +45,7 @@ export async function streamChat(
         "anthropic-dangerous-direct-browser-access": "true",
       },
       body: JSON.stringify({
-        model: "claude-sonnet-4-5-20241022",
+        model: "claude-sonnet-4-6",
         max_tokens: 4096,
         stream: true,
         system: systemPrompt,
